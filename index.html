@@ -1,142 +1,709 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. [Seu Nome] | Desenvolvedor e Educador</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome (para ícones) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Irineu Francisco Souza | Desenvolvedor Full-Stack</title>
 
-    <!-- Link para o seu CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- Ícones e Fontes do Template Original -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Seu CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+    <!-- Botão de Menu para Mobile -->
+    <div class="nav-toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
 
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">Prof. Irineu Francisco</a>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#habilidades">Habilidades</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Barra Lateral de Navegação -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="#" class="nav-logo-text">I</a>
+            </div>
 
-    <main>
-        <!-- Seção Hero -->
-        <section id="hero" class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Construindo o futuro do software.</h1>
-                    <p>Especialista em desenvolvimento de sistemas e educador apaixonado por transformar código em soluções robustas e pessoas em desenvolvedores de excelência.</p>
-                    <a href="#projetos" class="cta-button">Conheça meu trabalho</a>
+            <div class="nav-menu">
+                <div class="menu">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link active-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skills" class="nav-link">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="hero-image">
-                    <!-- SUGESTÃO: Use uma foto profissional sua ou de um ambiente de trabalho limpo e moderno. -->
-                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop" alt="Notebook exibindo código em uma mesa de trabalho organizada.">
+            </div>
+
+            <div class="btn-share">
+                <i class="uil uil-share-alt social-share"></i>
+            </div>
+
+            <div class="nav-close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <main class="main">
+        <!-- Seção Home -->
+        <section class="home" id="home">
+            <div class="home-container container grid">
+                <div class="home-social">
+                    <span class="home-social-follow">Me siga</span>
+                    <div class="home-social-links">
+                        <a href="https://www.linkedin.com/in/irineufranciscosouza/?originalSubdomain=br" target="_blank"
+                            class="home-social-link">
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/IrineuFrancisco" target="_blank" class="home-social-link">
+                            <i class="uil uil-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <img src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1974&auto=format&fit=crop"
+                    alt="Ambiente de trabalho de um desenvolvedor com código na tela" class="home-img">
+
+                <div class="home-data">
+                    <h1 class="home-title">Olá, sou Irineu Francisco</h1>
+                    <h3 class="home-subtitle">Analista de Sistemas | Desenvolvedor Full-Stack</h3>
+                    <p class="home-description">Experiência em desenvolvimento de software, criando soluções robustas e
+                        eficientes com foco em qualidade e performance.</p>
+                    <a href="#about" class="button">
+                        <i class="uil uil-user button-icon"></i>
+                        Mais sobre mim
+                    </a>
+                </div>
+
+                <div class="my-info">
+                    <div class="info-item">
+                        <i class="uil uil-linkedin info-icon"></i>
+                        <div>
+                            <h3 class="info-title">LinkedIn</h3>
+                            <span class="info-subtitle">irineu-francisco-souza</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="uil uil-github-alt info-icon"></i>
+                        <div>
+                            <h3 class="info-title">GitHub</h3>
+                            <span class="info-subtitle">IrineuFrancisco</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="uil uil-envelope-edit info-icon"></i>
+                        <div>
+                            <h3 class="info-title">Email</h3>
+                            <span class="info-subtitle">irineu.souza@sp.senai.br</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Sobre Mim -->
-        <section id="sobre" class="section">
-            <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <p class="section-subtitle">Minha jornada na tecnologia e na educação</p>
-                <div class="about-text">
-                    <p>Com mais de [XX] anos de experiência no mercado e na academia, minha carreira é uma simbiose entre o desenvolvimento prático de software e a formação de novos talentos. Acredito que a melhor forma de aprender é construindo, e busco instilar em meus alunos a mesma paixão por resolver problemas complexos com código limpo, eficiente e escalável.</p>
-                    <p>Minha filosofia se baseia em três pilares: **fundamentos sólidos**, **aprendizado contínuo** e **ética profissional**. Seja desenvolvendo uma arquitetura de microsserviços ou orientando um trabalho de conclusão de curso, o objetivo é sempre o mesmo: entregar valor com responsabilidade e qualidade.</p>
+        <!-- Seção Sobre -->
+        <section class="about section" id="about">
+            <h2 class="section-title" data-heading="Minha Introdução">Sobre Mim</h2>
+            <div class="about-container container grid">
+                <img src="https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop"
+                    alt="Homem programando em frente a múltiplos monitores" class="about-img">
+                <div class="about-data">
+                    <h3 class="about-heading">Sou Irineu Francisco, um profissional apaixonado por tecnologia.</h3>
+                    <p class="about-description">Como Analista de Sistemas e Desenvolvedor Full-Stack, tenho vasta
+                        experiência na criação de aplicações web e mobile, utilizando tecnologias modernas para entregar
+                        produtos de alta qualidade, desde o back-end com Python e Django até o front-end com React e
+                        Next.js.</p>
+                    <div class="about-info">
+                        <div class="about-box">
+                            <i class="uil uil-award about-icon"></i>
+                            <h3 class="about-title">Experiência</h3>
+                            <span class="about-subtitle">3+ Anos</span>
+                        </div>
+                        <div class="about-box">
+                            <i class="uil uil-suitcase-alt about-icon"></i>
+                            <h3 class="about-title">Projetos</h3>
+                            <!-- <span class="about-subtitle">20+ Concluídos</span> -->
+                        </div>
+                        <div class="about-box">
+                            <i class="uil uil-book-reader about-icon"></i>
+                            <h3 class="about-title">Mentoria</h3>
+                            <span class="about-subtitle">Disponível</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="button"><i class="uil uil-navigator button-icon"></i>Entre em Contato</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Qualificações -->
+        <section class="qualification section">
+            <h2 class="section-title" data-heading="Minha Jornada">Qualificações</h2>
+            <div class="qualification-container container grid">
+                <div class="education">
+                    <h3 class="qualification-title"><i class="uil uil-graduation-cap"></i>Formação e Certificações</h3>
+                    <!-- Dados atualizados com as certificações do LinkedIn -->
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Gestão da Tecnologia da Informação</h3>
+                            <p class="timeline-text">Unoeste</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Dezembro 2015</span>
+                        </div>
+                         <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Python Essentials 1</h3>
+                            <p class="timeline-text">Cisco</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Abril de 2024</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Implantação de Serviços em Nuvem - Microsoft AZ-900</h3>
+                            <p class="timeline-text">Microsoft</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Abril de 2023</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Microsoft Certified: Azure AI Fundamentals</h3>
+                            <p class="timeline-text">Microsoft</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Julho 2022</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Power BI</h3>
+                            <p class="timeline-text">SENAI</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Outubro de
+                                2023</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Soluções Integradas com IOT</h3>
+                            <p class="timeline-text">SENAI</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Setembro de
+                                2023</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Implantação de Serviços em Nuvem - Microsoft DP-900</h3>
+                            <p class="timeline-text">SENAI</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Julho 2023</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Google Cloud Computing Foundations: Data, ML, and AI in
+                                Google Cloud - Locales</h3>
+                            <p class="timeline-text">Google Cloud</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Maio 2023</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Google Cloud Computing Foundations: Networking & Security
+                                in Google Cloud - Locales</h3>
+                            <p class="timeline-text">Google Cloud</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Maio 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience">
+                    <h3 class="qualification-title"><i class="uil uil-suitcase"></i>Experiência Profissional
+                    </h3>
+                    <!-- IMPORTANTE: Altere os dados abaixo com sua experiência real -->
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">SENAI</h3>
+                            <p class="timeline-text">Instrutor de Formação Profissional III</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>Janeiro de 2023 -
+                                Presente</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-title">Tv Fronteira</h3>
+                            <p class="timeline-text">Engenharia</p>
+                            <span class="timeline-date"><i class="uil uil-calendar-alt"></i>2006 -
+                                2023</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção Habilidades -->
-        <section id="habilidades" class="section section-light">
-            <div class="container">
-                <h2 class="section-title">Habilidades Técnicas</h2>
-                <p class="section-subtitle">As ferramentas e tecnologias que domino e ensino.</p>
-                <div class="skills-grid">
-                    <div class="skill-card"><i class="fa-brands fa-python"></i> Python</div>
-                    <div class="skill-card"><i class="fa-brands fa-js"></i> JavaScript & TypeScript</div>
-                    <div class="skill-card"><i class="fa-brands fa-react"></i> React & React-Native</div>
-                    <div class="skill-card"><i class="fa-brands fa-node-js"></i> Node.js</div>
-                    <div class="skill-card"><i class="fa-solid fa-database"></i> SQL & NoSQL</div>
-                    <div class="skill-card"><i class="fa-brands fa-docker"></i> Docker & Contêineres</div>
-                    <div class="skill-card"><i class="fa-solid fa-cloud"></i> Arquitetura em Nuvem (Azuer/GOOGLE Cloud)
+        <section class="skills section" id="skills">
+            <h2 class="section-title" data-heading="Minhas Habilidades">Minha Experiência Técnica</h2>
+            <div class="skills-container container grid">
+                <div class="skills-tabs">
+                    <!-- Aba Frontend & Mobile -->
+                    <div class="skills-header skills-active" data-target="#frontend">
+                        <i class="uil uil-brackets-curly skills-icon"></i>
+                        <div>
+                            <h1 class="skills-title">Frontend & Mobile</h1>
+                            <span class="skills-subtitle">Desenvolvimento de interfaces</span>
+                        </div>
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+                    <!-- Aba Backend & Dados -->
+                    <div class="skills-header" data-target="#backend">
+                        <i class="uil uil-server-network skills-icon"></i>
+                        <div>
+                            <h1 class="skills-title">Backend & Dados</h1>
+                            <span class="skills-subtitle">Lógica de negócio e dados</span>
+                        </div>
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+                    <!-- Aba Ferramentas -->
+                    <div class="skills-header" data-target="#tools">
+                        <i class="uil uil-wrench skills-icon"></i>
+                        <div>
+                            <h1 class="skills-title">Ferramentas & DevOps</h1>
+                            <span class="skills-subtitle">Ecossistema de desenvolvimento</span>
+                        </div>
+                        <i class="uil uil-angle-down skills-arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills-content">
+                    <!-- Conteúdo Frontend -->
+                    <div class="skills-group skills-active" data-content id="frontend">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JavaScript & TypeScript</h3><span
+                                        class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 90%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">React & Next.js</h3><span class="skills-number">85%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">React Native</h3><span class="skills-number">75%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Flutter</h3><span class="skills-number">70%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Backend -->
+                    <div class="skills-group" data-content id="backend">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Python & Django</h3><span class="skills-number">95%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Node.js</h3><span class="skills-number">70%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">SQL (PostgreSQL, MySQL)</h3><span
+                                        class="skills-number">85%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">NoSQL (MongoDB, Redis)</h3><span
+                                        class="skills-number">75%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Ferramentas -->
+                    <div class="skills-group" data-content id="tools">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Git & GitHub</h3><span class="skills-number">95%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Docker</h3><span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 80%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">CI/CD (GitHub Actions)</h3><span
+                                        class="skills-number">70%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Cloud (AWS, Vercel)</h3><span
+                                        class="skills-number">75%</span>
+                                </div>
+                                <div class="skills-bar"><span class="skills-percentage" style="width: 75%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Seção Projetos -->
-        <section id="projetos" class="section">
-            <div class="container">
-                <h2 class="section-title">Projetos Destacados</h2>
-                <p class="section-subtitle">Uma amostra do meu trabalho prático e acadêmico.</p>
-                <div class="projects-grid">
-                    <!-- Projeto 1 -->
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x250/1D3557/F1FAEE?text=Screenshot+Projeto+1" alt="Imagem do Projeto 1">
-                        <h3>Sistema de Gestão Acadêmica</h3>
-                        <p>Plataforma completa para gerenciamento de notas, faltas e materiais de aula. Desenvolvido com Django, React e PostgreSQL.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Online</a>
+        <section class="work section" id="work">
+            <h2 class="section-title" data-heading="Meu Portfólio">Projetos Recentes</h2>
+            <div class="work-filters">
+                <span class="work-item active-work" data-filter="all">Todos</span>
+                <span class="work-item" data-filter=".fullstack">Full-Stack</span>
+                <span class="work-item" data-filter=".frontend">Front-end</span>
+            </div>
+
+            <div class="work-container container grid">
+                <!-- Projeto 1: Sistema de Chamados -->
+                <div class="work-card mix fullstack">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1931&auto=format&fit=crop"
+                        alt="Screenshot do Sistema de Chamados" class="work-img">
+                    <h3 class="work-title">Sistema de Chamados</h3>
+                    <span class="work-button">Detalhes<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Sistema de Gerenciamento de Tickets</h3>
+                        <p class="details-description">Aplicação full-stack para abertura e gerenciamento de chamados de
+                            suporte, com autenticação e painel administrativo.</p>
+                        <ul class="details-info">
+                            <li>Criado em - <span>2023</span></li>
+                            <li>Tecnologias - <span>Django, React, PostgreSQL</span></li>
+                            <li>Função - <span>Full-Stack</span></li>
+                            <li>Ver - <span><a
+                                        href="https://github.com/IrineuFrancisco/sistema-de-chamados-django-react"
+                                        target="_blank">GitHub Repo</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Projeto 2: Pokédex -->
+                <div class="work-card mix frontend">
+                    <img src="https://images.unsplash.com/photo-1639055848528-251c34759497?q=80&w=1964&auto=format&fit=crop"
+                        alt="Screenshot da Pokédex" class="work-img">
+                    <h3 class="work-title">Pokédex com Next.js</h3>
+                    <span class="work-button">Detalhes<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Enciclopédia de Pokémon Interativa</h3>
+                        <p class="details-description">Interface moderna e responsiva que consome a PokéAPI para listar
+                            e exibir detalhes de pokémons.</p>
+                        <ul class="details-info">
+                            <li>Criado em - <span>2024</span></li>
+                            <li>Tecnologias - <span>Next.js, TypeScript, TailwindCSS</span></li>
+                            <li>Função - <span>Front-end</span></li>
+                            <li>Ver - <span><a href="https://github.com/IrineuFrancisco/projeto-pokedex-nextjs"
+                                        target="_blank">GitHub Repo</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Projeto 3: Projeto Login -->
+                <div class="work-card mix frontend">
+                    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop"
+                        alt="Screenshot da Tela de Login" class="work-img">
+                    <h3 class="work-title">Sistema de Login</h3>
+                    <span class="work-button">Detalhes<i class="uil uil-arrow-right work-button-icon"></i></span>
+                    <div class="portfolio-item-details">
+                        <h3 class="details-title">Página de Autenticação Moderna</h3>
+                        <p class="details-description">Componente de login e cadastro com validação de formulário e
+                            design focado na experiência do usuário.</p>
+                        <ul class="details-info">
+                            <li>Criado em - <span>2023</span></li>
+                            <li>Tecnologias - <span>Next.js, CSS Modules</span></li>
+                            <li>Função - <span>Front-end</span></li>
+                            <li>Ver - <span><a href="https://github.com/IrineuFrancisco/projeto-login-nextjs"
+                                        target="_blank">GitHub Repo</a></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popup dos Projetos -->
+        <div class="portfolio-popup">
+            <div class="portfolio-popup-inner">
+                <div class="portfolio-popup-content grid">
+                    <span class="portfolio-popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp-thumbnail">
+                        <img src="https://via.placeholder.com/600x400" alt="" class="portfolio-popup-img">
+                    </div>
+                    <div class="portfolio-popup-info">
+                        <div class="portfolio-popup-subtitle">Projeto - <span></span></div>
+                        <div class="portfolio-popup-body">
+                            <!-- Conteúdo injetado via JS -->
                         </div>
                     </div>
-                    <!-- Projeto 2 -->
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x250/457B9D/F1FAEE?text=Screenshot+Projeto+2" alt="Imagem do Projeto 2">
-                        <h3>API de E-commerce</h3>
-                        <p>API RESTful para uma loja virtual com foco em performance e segurança, utilizando Node.js, TypeScript e MongoDB.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção Serviços -->
+        <section class="services section" id="services">
+            <h2 class="section-title" data-heading="Serviços">O que eu ofereço</h2>
+            <div class="services-container container grid">
+                <!-- Serviço 1 -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-brackets-curly services-icon"></i>
+                        <h3 class="services-title">Desenvolvimento <br> Full-Stack</h3>
+                    </div>
+                    <span class="services-button">Ver Mais <i
+                            class="uil uil-arrow-right services-button-icon"></i></span>
+                    <div class="services-modal">
+                        <div class="services-modal-content">
+                            <i class="uil uil-times services-modal-close"></i>
+                            <h3 class="services-modal-title">Desenvolvimento Full-Stack</h3>
+                            <p class="services-modal-description">Criação de soluções completas, do back-end ao
+                                front-end, garantindo performance e escalabilidade.</p>
+                            <ul class="services-modal-services grid">
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Desenvolvimento de APIs RESTful.</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Criação de Single-Page Applications (SPAs).</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Integração com bancos de dados SQL e NoSQL.</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Manutenção e evolução de sistemas legados.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- Projeto 3 -->
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/400x250/A8DADC/1D3557?text=Screenshot+Projeto+3" alt="Imagem do Projeto 3">
-                        <h3>Dashboard de Análise de Dados</h3>
-                        <p>Visualização de dados em tempo real com Python (Dash/Plotly) para análise de métricas de engajamento de estudantes.</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Ver no GitHub</a>
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Online</a>
+                </div>
+                <!-- Serviço 2 -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-mobile-android services-icon"></i>
+                        <h3 class="services-title">Desenvolvimento <br> Mobile</h3>
+                    </div>
+                    <span class="services-button">Ver Mais <i
+                            class="uil uil-arrow-right services-button-icon"></i></span>
+                    <div class="services-modal">
+                        <div class="services-modal-content">
+                            <i class="uil uil-times services-modal-close"></i>
+                            <h3 class="services-modal-title">Desenvolvimento Mobile</h3>
+                            <p class="services-modal-description">Construção de aplicativos multiplataforma para iOS e
+                                Android com frameworks modernos.</p>
+                            <ul class="services-modal-services grid">
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Apps com React Native e Flutter.</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Integração com APIs e serviços de back-end.</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Publicação nas lojas (App Store, Google Play).</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Serviço 3 -->
+                <div class="services-content">
+                    <div>
+                        <i class="uil uil-lightbulb-alt services-icon"></i>
+                        <h3 class="services-title">Consultoria & <br> Mentoria</h3>
+                    </div>
+                    <span class="services-button">Ver Mais <i
+                            class="uil uil-arrow-right services-button-icon"></i></span>
+                    <div class="services-modal">
+                        <div class="services-modal-content">
+                            <i class="uil uil-times services-modal-close"></i>
+                            <h3 class="services-modal-title">Consultoria & Mentoria</h3>
+                            <p class="services-modal-description">Apoio a equipes e desenvolvedores para otimizar
+                                processos e superar desafios técnicos.</p>
+                            <ul class="services-modal-services grid">
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Revisão de código (Code Review).</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Consultoria em arquitetura de software.</p>
+                                </li>
+                                <li class="services-modal-service"><i
+                                        class="uil uil-check-circle services-modal-icon"></i>
+                                    <p>Mentoria para desenvolvedores iniciantes.</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Seção Depoimentos -->
+        <!-- <section class="testimonials section">
+            <h2 class="section-title" data-heading="O que dizem os clientes">Depoimentos</h2> -->
+            <!-- IMPORTANTE: Substitua os depoimentos por feedback real de clientes ou colegas. -->
+            <!-- <div class="testimonials-container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote"><i class='bx bxs-quote-alt-left'></i></div>
+                        <p class="testimonial-description">"Trabalhar com o Irineu foi excelente. Ele entregou uma
+                            solução robusta e bem documentada, superando nossas expectativas. Profissional altamente
+                            recomendado."</p>
+                        <h3 class="testimonial-date">Março 30, 2024</h3>
+                        <div class="testimonial-profile">
+                            <img src="https://i.postimg.cc/MTr9j4Yn/client1.jpg" alt="" class="testimonial-profile-img">
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Nome do Cliente</span>
+                                <span class="testimonail-profile-detail">Diretor na Empresa X</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-quote"><i class='bx bxs-quote-alt-left'></i></div>
+                        <p class="testimonial-description">"A capacidade técnica e o comprometimento do Irineu foram
+                            fundamentais para o sucesso do nosso projeto. Um ótimo parceiro para resolver problemas
+                            complexos."</p>
+                        <h3 class="testimonial-date">Janeiro 18, 2024</h3>
+                        <div class="testimonial-profile">
+                            <img src="https://i.postimg.cc/wvV7f8rB/client2.jpg" alt="" class="testimonial-profile-img">
+                            <div class="testimonial-profile-data">
+                                <span class="testimonial-profile-name">Nome do Colega</span>
+                                <span class="testimonail-profile-detail">Gerente de Projetos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section> -->
 
         <!-- Seção Contato -->
-        <section id="contato" class="section section-light">
-            <div class="container contact-content">
-                <h2 class="section-title">Vamos nos Conectar?</h2>
-                <p>Estou sempre aberto a novas colaborações, projetos de pesquisa e oportunidades de ensino. Entre em contato através das minhas redes profissionais.</p>
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/[seu-usuario]" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/[seu-usuario]" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:[seu-email@dominio.com]" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <!-- Para professores, o Lattes é uma ótima adição -->
-                    <a href="http://lattes.cnpq.br/[seu-lattes]" target="_blank" title="Currículo Lattes"><i class="fa-solid fa-graduation-cap"></i></a>
+        <section class="contact section" id="contact">
+            <h2 class="section-title" data-heading="Vamos Conversar">Entre em Contato</h2>
+            <div class="contact-container container grid">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="uil uil-envelope-edit contact-card-icon"></i>
+                            <h3 class="contact-card-title">Email</h3>
+                            <span class="contact-card-data">seu-email@dominio.com</span>
+                            <a href="mailto:seu-email@dominio.com" class="contact-button">Me escreva <i
+                                    class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="uil uil-linkedin contact-card-icon"></i>
+                            <h3 class="contact-card-title">LinkedIn</h3>
+                            <span class="contact-card-data">irineu-francisco-souza</span>
+                            <a href="https://www.linkedin.com/in/irineu-francisco-souza-5548aa2a4" target="_blank"
+                                class="contact-button">Me adicione <i
+                                    class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="uil uil-github contact-card-icon"></i>
+                            <h3 class="contact-card-title">GitHub</h3>
+                            <span class="contact-card-data">IrineuFrancisco</span>
+                            <a href="https://github.com/IrineuFrancisco" target="_blank" class="contact-button">Ver
+                                projetos <i class="uil uil-arrow-right contact-button-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-content">
+                    <form action="" class="contact-form">
+                        <div class="input-container">
+                            <input type="text" class="input" required><label for="">Nome</label><span>Nome</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" class="input" required><label for="">Email</label><span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="text" class="input" required><label for="">Assunto</label><span>Assunto</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="" id="" class="input" required></textarea><label
+                                for="">Mensagem</label><span>Mensagem</span>
+                        </div>
+                        <button type="submit" class="button"><i class="uil uil-navigator button-icon"></i>Enviar
+                            Mensagem</button>
+                    </form>
                 </div>
             </div>
         </section>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="footer-bg">
+                <div class="footer-container container grid">
+                    <div>
+                        <h1 class="footer-title">Irineu Francisco</h1>
+                        <span class="footer-subtitle">Desenvolvedor Full-Stack</span>
+                    </div>
+                    <ul class="footer-links">
+                        <li><a href="#services" class="footer-links">Serviços</a></li>
+                        <li><a href="#work" class="footer-links">Projetos</a></li>
+                        <li><a href="#contact" class="footer-links">Contato</a></li>
+                    </ul>
+                    <div class="footer-socials">
+                        <a href="https://www.linkedin.com/in/irineu-francisco-souza-5548aa2a4" target="_blank"
+                            class="footer-social"><i class="uil uil-linkedin"></i></a>
+                        <a href="https://github.com/IrineuFrancisco" target="_blank" class="footer-social"><i
+                                class="uil uil-github"></i></a>
+                    </div>
+                </div>
+                <p class="footer-copy">© Irineu Francisco Souza. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2024 | Prof. [Seu Nome]. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
+    <!-- Scripts JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
+
 </html>
